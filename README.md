@@ -1,5 +1,5 @@
-# fetch-with-retry (axios-based)
-fetch-with-retry is a utility function built on top of the Axios library, designed to make HTTP(S) requests with automatic retry logic. When a request fails due to issues like network errors, timeouts, or specific status codes, it retries the operation a set number of times. It can be customized with options like retry count, delay between retries, backoff strategies, and error handling, leveraging Axios' capabilities while enhancing reliability in unstable network environments.
+# fetch-with-retry3 (axios-based)
+fetch-with-retry3 is a utility function built on top of the Axios library, designed to make HTTP(S) requests with automatic retry logic. When a request fails due to issues like network errors, timeouts, or specific status codes, it retries the operation a set number of times. It can be customized with options like retry count, delay between retries, backoff strategies, and error handling, leveraging Axios' capabilities while enhancing reliability in unstable network environments.
 
 ### Options
 
@@ -15,7 +15,7 @@ function fetchWithProxy<T = any, D = any>(
 
 ### GET example
 ``` GET
-  import { fetchWithRetry } from 'fetch-with-retry';
+  import { fetchWithRetry } from 'fetch-with-retry3';
 
   const result = await fetchWithRetry('https://api.example.com/data', {
     method: 'GET',
@@ -30,7 +30,7 @@ function fetchWithProxy<T = any, D = any>(
 
 ### POST example
 ``` POST
-  import { fetchWithRetry } from 'fetch-with-retry';
+  import { fetchWithRetry } from 'fetch-with-retry3';
   
   const result = await fetchWithRetry('https://api.example.com/data', {
     method: 'POST',
@@ -85,4 +85,4 @@ $ npm publish
 
 
 ## test package
-https://www.npmjs.com/package/fetch-with-retry
+https://www.npmjs.com/package/fetch-with-retry3
