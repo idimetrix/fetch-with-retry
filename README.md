@@ -1,6 +1,18 @@
 # fetch-with-retry (axios-based)
 fetch-with-retry is a utility function built on top of the Axios library, designed to make HTTP(S) requests with automatic retry logic. When a request fails due to issues like network errors, timeouts, or specific status codes, it retries the operation a set number of times. It can be customized with options like retry count, delay between retries, backoff strategies, and error handling, leveraging Axios' capabilities while enhancing reliability in unstable network environments.
 
+### Options
+
+```
+function fetchWithProxy<T = any, D = any>(
+  url: string, // URL
+  options?: AxiosRequestConfig<D>, // Options (axios based)
+  attempts: number = 3, // Number of attempts
+  delay: number = 1500, // Delay in milliseconds
+  timeout: number = 30 * 1000, // Timeout in milliseconds
+): Promise<AxiosResponse<T> & { ok: boolean; error?: Error }>
+```
+
 ### GET example
 ``` GET
   import { fetchWithRetry } from 'fetch-with-retry';

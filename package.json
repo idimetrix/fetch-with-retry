@@ -1,5 +1,5 @@
 {
-  "name": "fetch-with-retry",
+  "name": "fetch-with-retry3",
   "version": "1.0.1",
   "description": "fetch-with-retry is a utility function built on top of the Axios library, designed to make HTTP(S) requests with automatic retry logic. When a request fails due to issues like network errors, timeouts, or specific status codes, it retries the operation a set number of times. It can be customized with options like retry count, delay between retries, backoff strategies, and error handling, leveraging Axios' capabilities while enhancing reliability in unstable network environments.",
   "license": "MIT",
